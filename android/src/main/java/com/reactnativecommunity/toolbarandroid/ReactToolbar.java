@@ -6,7 +6,8 @@
  */
 
 package com.reactnativecommunity.toolbarandroid;
-
+import java.util.Map;
+import java.util.HashMap;
 import android.content.Context;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
@@ -113,7 +114,9 @@ public class ReactToolbar extends Toolbar {
       mWidth = width;
       mHeight = height;
     }
-
+    
+    public Map<String,Object> getExtras() { return new HashMap<String,Object>(); }
+    
     @Override
     public int getWidth() {
       return mWidth;
